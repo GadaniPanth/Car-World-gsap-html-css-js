@@ -201,6 +201,8 @@ nav-logo svg{
     position: relative;
     height: 60vh;
     width: 50vw;
+    border-radius: 50px;    
+    background-color: #121212;
     transition: all .8s ease;
 }
 
@@ -213,6 +215,7 @@ nav-logo svg{
     height: 100%;
     width: 100%;
     cursor: pointer;
+    object-fit: cover;
     transition: filter .8s ease;
 }
 
@@ -276,8 +279,25 @@ nav-logo svg{
 #page-3{
     position: relative;
     width: 100%;
+    height: 100vh;
     background-color: transparent;
+    overflow: hidden;
     /* z-index: 1; */
+}
+
+#page-3>h1{
+    position: absolute;
+    left: 57%;
+    top: 5%;
+    font-style: italic;
+    /* background-color: #1c1c1c; */
+    z-index: -1;
+    white-space: nowrap;
+    word-spacing: 3vw;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px crimson;
+    color: transparent;
+    font-size: 5vw;
 }
 
 .spacer{
@@ -362,6 +382,7 @@ nav-logo svg{
     width: 40vw;
     height: 30vw;
     position: relative;
+    border-radius: 80px;
 }
 
 #page-3 .model-images .images .img{
@@ -378,6 +399,12 @@ nav-logo svg{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#page-4 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
 }
 
 @media (max-width: 768px) {
